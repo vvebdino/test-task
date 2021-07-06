@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.custom-scrollbar.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav__list flex">
+                    <li><a href="#personal-info" class="header__nav__list__link">Личная информация</a></li>
+                    <li><a href="#experience" class="header__nav__list__link">Опыт</a></li>
+                    <li><a href="#js" class="header__nav__list__link">JavaScript</a></li>
+                    <li><a href="#about" class="header__nav__list__link">О себе</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                    <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+    </header>
+    
+    <form action="#" method="post">
+
+        <div class="questionnaire">Анкета</div>
+
+        <div class="personal-info container" id="personal-info">
+                <div class="personal-info__form">
+                    <img src="img/personal-info.png" alt="icon: personal-info">
+                    <span class="section-title personal-info__form__title">Личная информация</span>
+                    <div class="placeholder" data-placeholder="ФИО">
+                        <input type="text" class="personal-info__form__field">
+                    </div>
+                    <select name="select-year" class="personal-info__form__select ">
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1991">1990</option>
+                        <option value="1991">1989</option>
+                        <option value="1991">1988</option>
+                        <option value="1991">1987</option>
+                        <option value="1991">1986</option>
+                        <option value="1991">1985</option>
+                        <option value="1991">1984</option>
+                    </select>
+                    <div class="placeholder"  data-placeholder="Место проживания">
+                        <input type="text" class="personal-info__form__field">
+                    </div>
+                    <div class="placeholder" data-placeholder="Skype">
+                        <input type="text" class="personal-info__form__field">
+                    </div>
+                    <div class="placeholder" data-placeholder="Email">
+                    <input type="email" class="personal-info__form__field">
+                    </div>
+                    
+                    
+                </div>
+        </div>
+
+        <div class="expierence container" id="experience">
+            <div class="expierence__form">
+                    <div class="section-img">
+                        <img src="img/expierence.png" alt="icon: expierence">
+                    </div>
+                    <span class="section-title expierence__form__title">Расскажите о своем опыте</span>
+                    <div class="expierence__form__check flex">
+                        <div class="checkbox-wrap">
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="BEM" class="expierence__form__check__input" checked>
+                                <label for="BEM" class="expierence__form__check__label">БЭМ/OOCSS</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="preprocessor" class="expierence__form__check__input" checked>
+                                <label for="preprocessor" class="expierence__form__check__label">Stylus/LESS/SASS</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="svg" class="expierence__form__check__input" checked>
+                                <label for="svg" class="expierence__form__check__label">Работаю с SVG </label>
+                            </div>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="semantic" class="expierence__form__check__input" checked>
+                                <label for="semantic" class="expierence__form__check__label">Верстаю семантично</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="js" class="expierence__form__check__input" checked>
+                                <label for="js" class="expierence__form__check__label">ES2015/ES2016</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="gulp" class="expierence__form__check__input">
+                                <label for="gulp" class="expierence__form__check__label">Gulp/GRUNT</label>
+                            </div>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="webpack" class="expierence__form__check__input">
+                                <label for="webpack" class="expierence__form__check__label">Webpack</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="jquery" class="expierence__form__check__input" checked>
+                                <label for="jquery" class="expierence__form__check__label">jQuery</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" name="technologies" id="git" class="expierence__form__check__input" checked>
+                                <label for="git" class="expierence__form__check__label">Использую Git</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="js" id="js">
+            <div class="container">
+                <div class="js__form">
+                    <div class="section-img">
+                        <img src="img/js.png" alt="icon: JavaScript">
+                    </div>
+                    <span class="section-title js__form__title">Уровень владения JavaScript</span>
+                    <div class="js__form__scale">
+                        <ul class="js__form__scale__list flex">
+                            <li class="js__form__scale__list__item" value="0">Не владею</li>
+                            <li class="js__form__scale__list__item" value="1">Использую готовые <br>решения</li>
+                            <li class="js__form__scale__list__item" value="2">Использую готовые решения <br>и умею и переделывать</li>
+                            <li class="js__form__scale__list__item" value="3">Пишу сложный JS с нуля</li>
+                        </ul>
+                        <div class="input-wrapper">
+                            <input type="range" name="js-knowledge" min="0" max="100" step="5" class="js__form__scale__input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="container">
+                <div class="about__form">
+                    <div class="section-img">
+                        <img src="img/self.png" alt="icon: about">
+                    </div>
+                    <span class="section-title about__form__title">Расскажите о себе</span>
+                    <p class="about__form__text">Напишите несколько предложений, чем привлекла наша вакансия <br>и что вы ожидаете от работы у нас.</p>
+                    <textarea name="about" rows="6" placeholder="Понравилась тем, что..." class="about__form__field"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn" type="submit">Готово</button>
+
+    </form>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src='js/jquery-ui.min.js'></script>
+    <script src="js/jquery.custom-scrollbar.min.js"></script>
+    <script src='js/index.js'></script>
+</body>
+</html>
